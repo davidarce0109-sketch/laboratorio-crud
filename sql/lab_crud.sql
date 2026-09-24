@@ -3,8 +3,8 @@ CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 USE laboratorio_crud;
 
-DROP TABLE IF NOT EXISTS equipos;
-DROP TABLE IF NOT EXISTS usuarios;
+DROP TABLE IF EXISTS equipos;
+DROP TABLE IF EXISTS usuarios;
 
 CREATE TABLE usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,

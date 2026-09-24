@@ -23,7 +23,7 @@ async function seedAdmin() {
     const hash = await bcrypt.hash(password, 10);
 
     await pool.execute(
-        'INSERT INTO usuarios (nombre, email password, rol) VALUES (?, ?, ?, ?)',
+        'INSERT INTO usuarios (nombre, email, password, rol) VALUES (?, ?, ?, ?)',
         [name, email, hash, 'admin']
     );
 

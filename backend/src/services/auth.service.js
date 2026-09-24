@@ -33,7 +33,7 @@ async function loginUser({ email, password}) {
     }
 
     const [rows] = await pool.execute(
-        'SELECT id_usuario, nombre, email, password, rol FROM usuarios WHERE email = ?'
+        'SELECT id_usuario, nombre, email, password, rol FROM usuarios WHERE email = ?',
         [email]
     );
 
